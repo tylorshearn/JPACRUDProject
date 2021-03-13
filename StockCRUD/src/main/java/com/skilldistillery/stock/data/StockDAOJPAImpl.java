@@ -18,14 +18,21 @@ public class StockDAOJPAImpl implements StockDAO {
 	private EntityManager em;
 	
 	@Override
-	public Stock findById(int stockId) {
+	public Stock searchStockById(int stockId) {
 		return em.find(Stock.class, stockId);
 	}
 
 	@Override
-	public List<Stock> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Stock> showAllStock() {
+		String jpql = "SELECT s FROM Stock s";
+		return em.createQuery(jpql, Stock.class).getResultList();
+	}
+
+	@Override
+	public Stock createStock(Stock stock) {
+		em.persist(stock);
+		em.flush();
+		return stock;
 	}
 
 }

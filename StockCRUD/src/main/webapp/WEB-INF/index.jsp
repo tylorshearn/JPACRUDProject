@@ -10,6 +10,18 @@
 
 <h1>Stock Data</h1>
 
+<form action="searchStockById.do">
+    <input type="submit" value="Search for a Stock By Its ID" />
+	</form>
+	
+	<br><form action="createStock.do">
+    <input type="submit" value="Create a Stock" />
+	</form>
+	
+	<br><form action="showAllStock.do">
+    <input type="submit" value="View All Current Stock Information" />
+	</form>
+
 ${test.ticker}
 
 </body>

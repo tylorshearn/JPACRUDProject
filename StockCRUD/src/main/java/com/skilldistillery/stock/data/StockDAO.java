@@ -6,6 +6,7 @@ import com.skilldistillery.stock.entities.stock.Stock;
 
 public interface StockDAO {
 
-	Stock findById(int stockId);
-	List<Stock> findAll();
+	List<Stock> showAllStock();
+	Stock searchStockById(int stockId);
+	Stock createStock(Stock stock);
 }
