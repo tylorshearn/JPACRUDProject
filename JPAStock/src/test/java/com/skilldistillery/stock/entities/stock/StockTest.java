@@ -45,6 +45,8 @@ class StockTest {
 	void test_Stock_entity_mapping() {
 		assertNotNull(stock);
 		assertEquals("CTRM", stock.getTicker());
+		assertEquals(0.66, stock.getMarch1320ClosingPrice());
+		assertEquals(191813903, stock.getAverageVolumeMarch12());
+		assertEquals(518.68, stock.getMarketCapMarch12InMillions());
 	}
-
 }

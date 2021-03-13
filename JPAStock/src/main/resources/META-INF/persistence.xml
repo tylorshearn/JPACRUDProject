@@ -9,7 +9,7 @@
     </provider>
     
     <!-- entities -->
-    <class>com.skilldistillery.stock.entities.Stock</class>
+    <class>com.skilldistillery.stock.entities.stock.Stock</class>
     <!-- entities -->
 
     <properties>
