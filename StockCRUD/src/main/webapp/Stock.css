@@ -1,0 +1,104 @@
+table {
+	border: 1px solid black;
+	padding: 0px;
+	margin: 0px;
+	padding: 0;
+	border-spacing: 0;
+}
+
+th {
+	border: 1px solid black;
+}
+
+td {
+	border: 1px solid black;
+}
+
+.CTRM {
+	background-image: url("CTRM.jpg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+div.scrollable {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+.SHIP {
+	background-image: url("SHIP.gif");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+.CCIV {
+	background-image: url("CCIV.jpg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+.BLNK {
+	background-image: url("BLNK.jpg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+.FCEL {
+	background-image: url("FCEL.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+.ADMP {
+	background-image: url("ADMP.jpg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+.RIOT {
+	background-image: url("RIOT.png");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+.CLBS {
+	background-image: url("CLBS.jpg");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+
+.CIDM {
+	background-image: url("CIDM.png");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+	color: black;
+}
+
+
+.CSCW {
+	background-image: url("CSCW.png");
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: bottom;
+}

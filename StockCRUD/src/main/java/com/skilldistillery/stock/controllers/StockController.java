@@ -1,5 +1,7 @@
 package com.skilldistillery.stock.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,18 +27,14 @@ public class StockController {
 			return "index";
 		}
 		
-		@RequestMapping(path="showAllStock.do")
-		public String form1() {
-			return "showAllStock";
-		}
 		
 		@RequestMapping(path="searchStockById.do")
-		public String form2() {
+		public String form1() {
 		return "searchStockById";
 		}
 		
 		@RequestMapping(path="createStock.do")
-		public String form3() {
+		public String form2() {
 		return "createStock";
 		}
 		
@@ -51,6 +49,13 @@ public class StockController {
 		public String result2(Stock stock, Model model) {
 			Stock createdStock = dao.createStock(stock);
 			model.addAttribute("stock", createdStock);
-			return "searchStockByIdResult";
+			return "createStockResult";
+		}
+		
+		@RequestMapping(path="showAllStock.do")
+		public String result3(Model model) {
+			List<Stock> allStocks = dao.showAllStock();
+			model.addAttribute("stock", allStocks);
+			return "showAllStock";
 		}
 }
