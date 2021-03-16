@@ -10,8 +10,6 @@
 
 	<h1>Enter the ID Of The Stock</h1>
 	<h1>You'd Like To Destroy</h1>
-	<h1>You Can Only Destroy Stocks</h1>
-	<h1>You Have Created</h1>
 	<br>
 
 	<form action="destroyStockResult.do" method="POST">
