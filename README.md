@@ -31,3 +31,4 @@
 ### Lessons Learned
 
 * Your code will do anything you're able to make it do
+* You can do a lot with JSTL <c: choose> tags
