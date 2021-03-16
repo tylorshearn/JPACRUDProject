@@ -38,6 +38,16 @@ public class StockController {
 		return "createStock";
 		}
 		
+		@RequestMapping(path="updateStock.do")
+		public String form3() {
+		return "updateStock";
+		}
+		
+		@RequestMapping(path="destroyStock.do")
+		public String form4() {
+			return "destroyStock";
+		}
+		
 		@RequestMapping(path="searchStockByIdResult.do")
 		public String result1(Integer stockId, Model model) {
 		Stock stock = dao.searchStockById(stockId);
@@ -57,5 +67,18 @@ public class StockController {
 			List<Stock> allStocks = dao.showAllStock();
 			model.addAttribute("stock", allStocks);
 			return "showAllStock";
+		}
+		
+		@RequestMapping(path="updateStockResult.do")
+		public String Result4(Integer stockId, Stock stock, Model model) {
+			Stock updatedStock = dao.updateStock(stockId, stock);
+			model.addAttribute("stock", updatedStock);
+			return "updateStockResult";
+		}
+		
+		@RequestMapping(path="destroyStockResult.do")
+		public String Result5(Integer stockId) {
+			dao.destroyStock(stockId);
+			return "destroyStockResult";
 		}
 }

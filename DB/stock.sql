@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `stock` (
 ENGINE = InnoDB;
 
 SET SQL_MODE = '';
-DROP USER IF EXISTS stockuser@localhost;
+-- DROP USER stockuser@localhost;
 SET SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 CREATE USER 'stockuser'@'localhost' IDENTIFIED BY 'stockuser';
 
@@ -70,4 +70,3 @@ INSERT INTO `stock` (`id`, `ticker`, `description`, `march_13_20_closing_price`,
 INSERT INTO `stock` (`id`, `ticker`, `description`, `march_13_20_closing_price`, `april_13_20_closing_price`, `may_13_20_closing_price`, `june_15_20_closing_price`, `july_13_20_closing_price`, `august_13_20_closing_price`, `september_14_20_closing_price`, `october_13_20_closing_price`, `november_13_20_closing_price`, `december_14_20_closing_price`, `january_13_21_closing_price`, `february_16_21_closing_price`, `march_12_21_closing_price`, `average_volume_march_12`, `market_cap_march_12_in_millions`) VALUES (10, 'CSCW', 'Color Star Technology Co., Ltd., through its subsidiaries, provides online and offline music education services in the United States and China. It also offers Color World, an online cultural entertainment platform that provides celebrity lectures, celebrity concert videos, celebrity peripheral products, and artist interactive communication. Color Star Technology Co., Ltd. has a strategic partnership with Yinmiao Culture Development Co., Ltd. to work together in the areas of piano competition, art festival coordination, and online and offline training, as well as artificial intelligence piano hardware research and development, production, and sales. The company was formerly known as Huitao Technology Co., Ltd., and changed its name to Color Star Technology Co., Ltd. in May 2020. Color Star Technology Co., Ltd. was founded in 2005 and is based in New York, New York.', 1.08, 0.41, 0.40, 0.69, 1.25, 1.05, 0.78, 0.63, 0.54, 0.51, 0.98, 1.33, 0.89, 9310315, 52.34);
 
 COMMIT;
-

@@ -21,6 +21,14 @@
 	<br><form action="showAllStock.do">
     <input type="submit" value="View All Current Stock Information" />
 	</form>
+	
+	<br><form action="updateStock.do">
+    <input type="submit" value="Update A Stock" />
+	</form>
+	
+	<br><form action="destroyStock.do">
+    <input type="submit" value="Destroy A Stock" />
+	</form>
 
 ${test.ticker}
 

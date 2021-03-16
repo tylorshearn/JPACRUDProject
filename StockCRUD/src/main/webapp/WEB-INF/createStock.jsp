@@ -12,7 +12,7 @@
 <br>
 
 <form action="createStockResult.do" method="POST">
-		<b>* Ticker:</b>
+		<br><b>* Ticker:</b>
 		<input type="text" name="ticker" oninput="validity.valid||(value='');" size="10" required="required"/><br> 
 		<br><b>* Description:</b>
 		<input type="text" name="description" min=0 oninput="validity.valid||(value='');" size="50" /><br> 
@@ -42,7 +42,7 @@
 		<input type="number" step="0.01" name="february1621ClosingPrice" min=0 max=1999.99 oninput="validity.valid||(value='');" size="4" required="required"/><br>
 		<br><b>* March 12 21 Closing Price:<br>Price (0-1999.99)</b>
 		<input type="number" step="0.01" name="march1221ClosingPrice" min=0 max=1999.99 oninput="validity.valid||(value='');" size="4" required="required"/><br>
-		<br><b>* Average Volume As Of March 12:<br>Volume (0-1B)</b>
+		<br><b>* Average Volume As Of March 12:<br>Volume Whole Number (0-1B)</b>
 		<input type="number" step="0.01" name="averageVolumeMarch12" min=0 max=1000000000 oninput="validity.valid||(value='');" size="4" required="required"/><br> 
 		<br><b>* Market Cap As Of March 12(Millions):<br>Market Cap (0-999999.99)</b>
 		<input type="number" step="0.01" name="marketCapMarch12InMillions" min=0 max=999999.99 oninput="validity.valid||(value='');" size="4" required="required"/><br> 

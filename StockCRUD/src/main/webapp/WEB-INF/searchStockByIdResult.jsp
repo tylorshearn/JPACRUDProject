@@ -14,7 +14,7 @@
 	<br>
 
 	<c:choose>
-		<c:when test="${stock.id > '10'}">
+		<c:when test="${stock.id > 10}">
 			<table>
 				<thead>
 					<tr>
@@ -70,7 +70,7 @@
 	
 	
 	<c:choose>
-		<c:when test="${stock.id == '1'}">
+		<c:when test="${stock.id == 1}">
 			<table class="CTRM">
 				<thead>
 					<tr>
@@ -125,7 +125,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '2'}">
+		<c:when test="${stock.id == 2}">
 			<table class="SHIP">
 				<thead>
 					<tr>
@@ -180,7 +180,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '3'}">
+		<c:when test="${stock.id == 3}">
 			<table class="CCIV">
 
 				<thead>
@@ -236,7 +236,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '4'}">
+		<c:when test="${stock.id == 4}">
 			<table class="BLNK">
 				<thead>
 					<tr>
@@ -291,7 +291,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '5'}">
+		<c:when test="${stock.id == 5}">
 			<table class="FCEL">
 				<thead>
 					<tr>
@@ -346,7 +346,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '6'}">
+		<c:when test="${stock.id == 6}">
 			<table class="ADMP">
 				<thead>
 					<tr>
@@ -401,7 +401,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '7'}">
+		<c:when test="${stock.id == 7}">
 			<table class="RIOT">
 				<thead>
 					<tr>
@@ -456,7 +456,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '8'}">
+		<c:when test="${stock.id == 8}">
 			<table class="CLBS">
 				<thead>
 					<tr>
@@ -511,7 +511,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '9'}">
+		<c:when test="${stock.id == 9}">
 			<table class="CIDM">
 				<thead>
 					<tr>
@@ -566,7 +566,7 @@
 	</c:choose>
 
 	<c:choose>
-		<c:when test="${stock.id == '10'}">
+		<c:when test="${stock.id == 10}">
 			<table class="CSCW">
 				<thead>
 					<tr>

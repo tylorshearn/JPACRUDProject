@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="<c:url value="Stock.css" />" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Your Stock</title>
 </head>
@@ -12,8 +13,6 @@
 <h1>Your Stock</h1>
 <br>
 
-<c:choose>
-		<c:when test="${stock.id > '10'}">
 			<table>
 				<thead>
 					<tr>
@@ -64,8 +63,6 @@
 			<form action="home.do">
 				<input type="submit" value="Home" />
 			</form>
-		</c:when>
-	</c:choose>
 
 </body>
 </html>

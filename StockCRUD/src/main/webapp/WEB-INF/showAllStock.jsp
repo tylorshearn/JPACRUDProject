@@ -13,34 +13,34 @@
 	<h1>Viewing All Current Stock Information</h1>
 
 	<br>
-	<table>
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Ticker</th>
-				<th>Description</th>
-				<th>March 13 20 Closing Price</th>
-				<th>April 13 20 Closing Price</th>
-				<th>May 13 20 Closing Price</th>
-				<th>June 15 20 Closing Price</th>
-				<th>July 13 20 Closing Price</th>
-				<th>August 13 20 Closing Price</th>
-				<th>September 14 20 Closing Price</th>
-				<th>October 13 20 Closing Price</th>
-				<th>November 13 20 Closing Price</th>
-				<th>December 14 20 Closing Price</th>
-				<th>January 13 21 Closing Price</th>
-				<th>February 16 21 Closing Price</th>
-				<th>March 12 21 Closing Price</th>
-				<th>Average Volume As Of March 12</th>
-				<th>Market Cap As Of March 12(Millions)</th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach var="s" items="${stock}">
-				<tr>
-					<c:choose>
-						<c:when test="${s.id > '11'}">
+	<c:forEach var="s" items="${stock}">
+		<c:choose>
+			<c:when test="${s.id > 10}">
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Ticker</th>
+							<th>Description</th>
+							<th>March 13 20 Closing Price</th>
+							<th>April 13 20 Closing Price</th>
+							<th>May 13 20 Closing Price</th>
+							<th>June 15 20 Closing Price</th>
+							<th>July 13 20 Closing Price</th>
+							<th>August 13 20 Closing Price</th>
+							<th>September 14 20 Closing Price</th>
+							<th>October 13 20 Closing Price</th>
+							<th>November 13 20 Closing Price</th>
+							<th>December 14 20 Closing Price</th>
+							<th>January 13 21 Closing Price</th>
+							<th>February 16 21 Closing Price</th>
+							<th>March 12 21 Closing Price</th>
+							<th>Average Volume As Of March 12</th>
+							<th>Market Cap As Of March 12(Millions)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -59,13 +59,14 @@
 							<td>${s.march1221ClosingPrice}</td>
 							<td>${s.averageVolumeMarch12}</td>
 							<td>${s.marketCapMarch12InMillions}</td>
-						</c:when>
-					</c:choose>
-				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
-	
+						</tr>
+					</tbody>
+				</table>
+				<br>
+			</c:when>
+		</c:choose>
+	</c:forEach>
+
 	<br>
 	<table class="CTRM">
 		<thead>
@@ -94,7 +95,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'CTRM'}">
+						<c:when test="${s.id == 1}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -148,7 +149,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'SHIP'}">
+						<c:when test="${s.id == 2}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -202,7 +203,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'CCIV'}">
+						<c:when test="${s.id == 3}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -256,7 +257,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'BLNK'}">
+						<c:when test="${s.id == 4}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -310,7 +311,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'FCEL'}">
+						<c:when test="${s.id == 5}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -364,7 +365,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'ADMP'}">
+						<c:when test="${s.id == 6}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -418,7 +419,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'RIOT'}">
+						<c:when test="${s.id == 7}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -472,7 +473,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'CLBS'}">
+						<c:when test="${s.id == 8}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -526,7 +527,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'CIDM'}">
+						<c:when test="${s.id == 9}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
@@ -580,7 +581,7 @@
 			<c:forEach var="s" items="${stock}">
 				<tr>
 					<c:choose>
-						<c:when test="${s.ticker == 'CSCW'}">
+						<c:when test="${s.id == 10}">
 							<td>${s.id}</td>
 							<td>${s.ticker}</td>
 							<td><div class=scrollable>${s.description}</div></td>
